@@ -1,25 +1,49 @@
-# StreetFood Connect 🍲
+# StreetConnect 🍲🤝
 
-## 🚀 Project Description
-StreetFood Connect is a web platform designed to help street food vendors get *affordable raw materials* directly from trusted suppliers.  
-It builds *trust + structure + affordability* by connecting vendors, suppliers, and customers.
+### Connecting Street Food Vendors with Trusted Raw Material Suppliers
 
-## ✨ Features
-- 📦 Supplier-Vendor Marketplace: Vendors can browse affordable raw materials.  
-- 🤝 Trust Score System: Ratings & reviews build reliability.  
-- 📍 Localized Listings: Nearby suppliers shown first.  
-- 📊 Analytics Dashboard: Vendors can track purchases & costs.  
+![StreetConnect Logo](https://img.shields.io/badge/Version-1.0-blue) ![Status](https://img.shields.io/badge/Status-Prototype-brightgreen) ![Built%20with-React](https://img.shields.io/badge/Built%20with-React-blue) ![Hosted%20on-Netlify](https://img.shields.io/badge/Hosted%20on-Netlify-lightgrey)
 
-## 🌍 Impact
-StreetFood Connect helps small vendors:  
-- Save money on raw materials.  
-- Build stronger businesses.  
-- Reduce waste with bulk sharing.  
+---
 
-## 🔗 Deployed Application
-👉 https://streetconnectt.netlify.app/ 
+## 🚨 Problem Statement
 
-## 📸 Screenshots
-Home Page - <img width="1920" height="1080" alt="Screenshot 2025-09-27 170157" src="https://github.com/user-attachments/assets/81c95c36-9693-47e8-8f12-8412238f42fb" />
+Street food vendors face difficulties in sourcing **quality raw materials at affordable prices**. With no structured marketplace or trusted suppliers, they rely on middlemen, leading to **high costs, low profits, and inconsistent food quality**.
 
-Market Place - <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2d5ee9c4-f671-4c38-bd88-c0b885549950" />
+---
+
+## 💡 Solution – StreetConnect
+
+A **B2B platform** that connects street food vendors directly with farmers, wholesalers, and verified suppliers. Our platform ensures **fair pricing, quality checks, and trust-building** through ratings & reviews.
+
+**Key Features:**
+
+* 📦 Direct vendor–supplier connection
+* ⭐ Verified suppliers with ratings
+* 💰 Transparent, affordable pricing
+* 🔍 Search & filter by product type/price
+* 📱 Mobile-first UI for easy access
+
+---
+
+## 🔧 Tech Stack
+
+* **Frontend:** React + TailwindCSS
+* **Backend:** Node.js / Express
+* **Database:** MongoDB
+* **Hosting:** Netlify + Render
+
+---
+
+## 🚀 Live Prototype
+
+👉 [StreetConnect Website](https://streetconnectt.netlify.app/)
+
+---
+
+## 🎯 Impact
+
+* ✅ Reduce vendor costs by cutting middlemen
+* ✅ Increase profits for small businesses
+* ✅ Improve food quality & customer satisfaction
+* ✅ Build trust in the street food ecosystem
