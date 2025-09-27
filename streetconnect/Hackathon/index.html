@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetConnect - Empowering Street Food Vendors</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <span>StreetConnect</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="pages/marketplace.html" class="nav-link">Marketplace</a>
+                <a href="pages/inventory.html" class="nav-link">Inventory</a>
+                <a href="pages/forum.html" class="nav-link">Community</a>
+                <a href="pages/analytics.html" class="nav-link">Analytics</a>
+                <a href="pages/login.html" class="nav-link">Login</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Empowering Street Food Vendors</h1>
+                <p class="hero-subtitle">Connect with trusted suppliers, manage inventory, and grow your business with our digital platform designed for Indian street food entrepreneurs.</p>
+                <div class="hero-buttons">
+                    <a href="pages/marketplace.html" class="btn btn-primary">Start Shopping</a>
+                    <a href="pages/register.html" class="btn btn-secondary">Join as Vendor</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./images/shreevardhan-iyer-UNWY8Bdrtro-unsplash.jpg" alt="Street Food Vendor" class="hero-img"">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose StreetConnect?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Marketplace</h3>
+                    <p>Browse and buy affordable raw materials and utensils from verified suppliers with UPI payment support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Trusted Reviews</h3>
+                    <p>Rate and review suppliers to build credibility and help fellow vendors make informed decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Inventory Management</h3>
+                    <p>Track stock levels, set alerts, and manage orders efficiently with our smart dashboard.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Local Discovery</h3>
+                    <p>Find nearby suppliers using PIN code for faster delivery and better prices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Forum</h3>
+                    <p>Connect with fellow vendors, share tips, and get advice from food authority representatives.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Assistant</h3>
+                    <p>Get smart suggestions for cost-effective combinations and optimized ordering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Support -->
+    <section class="language-support">
+        <div class="container">
+            <h2 class="section-title">Available in Multiple Languages</h2>
+            <div class="language-buttons">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="hi">हिंदी</button>
+                <button class="lang-btn" data-lang="mr">मराठी</button>
+                <button class="lang-btn" data-lang="ta">தமிழ்</button>
+                <button class="lang-btn" data-lang="te">తెలుగు</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voice Input Section -->
+    <section class="voice-section">
+        <div class="container">
+            <h2 class="section-title">Voice-Enabled Search</h2>
+            <div class="voice-container">
+                <div class="voice-input">
+                    <input type="text" id="voice-search" placeholder="Search products or ask questions..." class="voice-search-input">
+                    <button id="voice-btn" class="voice-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+                <p class="voice-hint">Click the microphone and speak in your preferred language</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StreetConnect</h3>
+                    <p>Empowering street food vendors with digital solutions for better business growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="pages/marketplace.html">Marketplace</a></li>
+                        <li><a href="pages/inventory.html">Inventory</a></li>
+                        <li><a href="pages/forum.html">Community</a></li>
+                        <li><a href="pages/analytics.html">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="pages/help.html">Help Center</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="pages/terms.html">Terms of Service</a></li>
+                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StreetConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/speech.js"></script>
+    <script src="scripts/translations.js"></script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } 
+          from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCNJfUIj7PSRtry1VNEJCngtnYe927cPI4",
+    authDomain: "streetconnect-e0522.firebaseapp.com",
+    projectId: "streetconnect-e0522",
+    storageBucket: "streetconnect-e0522.firebasestorage.app",
+    messagingSenderId: "555804695389",
+    appId: "1:555804695389:web:245a4bce9a6d9fe28766b4"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // ✅ Redirect if not logged in
+  onAuthStateChanged(auth, (user) => {
+    if (!user) {
+      window.location.href = "/pages/login.html"; 
+    }
+  });
+</script>
+
+</body>
+</html> 

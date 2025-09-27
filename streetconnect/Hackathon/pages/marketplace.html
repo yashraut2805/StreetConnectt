@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - StreetConnect</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/marketplace.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <span>StreetConnect</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="marketplace.html" class="nav-link active">Marketplace</a>
+                <a href="inventory.html" class="nav-link">Inventory</a>
+                <a href="forum.html" class="nav-link">Community</a>
+                <a href="analytics.html" class="nav-link">Analytics</a>
+                <a href="login.html" class="nav-link">Login</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Marketplace Header -->
+    <section class="marketplace-header">
+        <div class="container">
+            <h1>Marketplace</h1>
+            <p>Browse and buy affordable raw materials and utensils from verified suppliers</p>
+            
+            <!-- Search and Filters -->
+            <div class="search-filters">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search products, suppliers, or categories...">
+                    <button id="search-btn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filters">
+                    <select id="category-filter" class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="spices">Spices</option>
+                        <option value="grains">Grains</option>
+                        <option value="utensils">Utensils</option>
+                        <option value="packaging">Packaging</option>
+                    </select>
+                    
+                    <select id="price-filter" class="filter-select">
+                        <option value="">All Prices</option>
+                        <option value="0-100">Under ₹100</option>
+                        <option value="100-500">₹100 - ₹500</option>
+                        <option value="500-1000">₹500 - ₹1000</option>
+                        <option value="1000+">Above ₹1000</option>
+                    </select>
+                    
+                    <select id="rating-filter" class="filter-select">
+                        <option value="">All Ratings</option>
+                        <option value="4+">4+ Stars</option>
+                        <option value="3+">3+ Stars</option>
+                        <option value="2+">2+ Stars</option>
+                    </select>
+                    
+                    <button id="location-btn" class="location-btn">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="location-text">Set Location</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="marketplace-content">
+        <div class="container">
+            <div class="marketplace-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#" data-category="all" class="active">All Products</a></li>
+                            <li><a href="#" data-category="vegetables">Vegetables & Fruits</a></li>
+                            <li><a href="#" data-category="spices">Spices & Masalas</a></li>
+                            <li><a href="#" data-category="grains">Grains & Pulses</a></li>
+                            <li><a href="#" data-category="utensils">Cooking Utensils</a></li>
+                            <li><a href="#" data-category="packaging">Packaging Materials</a></li>
+                            <li><a href="#" data-category="oils">Oils & Ghee</a></li>
+                            <li><a href="#" data-category="dairy">Dairy Products</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" id="price-slider" min="0" max="5000" value="5000">
+                            <div class="price-labels">
+                                <span>₹0</span>
+                                <span id="price-value">₹5000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Supplier Rating</h3>
+                        <div class="rating-filters">
+                            <label class="rating-option">
+                                <input type="checkbox" value="5">
+                                <span class="stars">★★★★★</span>
+                                <span>5 Stars</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="checkbox" value="4">
+                                <span class="stars">★★★★☆</span>
+                                <span>4+ Stars</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="checkbox" value="3">
+                                <span class="stars">★★★☆☆</span>
+                                <span>3+ Stars</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Delivery Options</h3>
+                        <div class="delivery-filters">
+                            <label class="delivery-option">
+                                <input type="checkbox" value="same-day">
+                                <span>Same Day Delivery</span>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="checkbox" value="next-day">
+                                <span>Next Day Delivery</span>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="checkbox" value="free-delivery">
+                                <span>Free Delivery</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="products-section">
+                    <div class="products-header">
+                        <div class="results-info">
+                            <span id="results-count">Showing 24 products</span>
+                        </div>
+                        <div class="sort-options">
+                            <select id="sort-select" class="sort-select">
+                                <option value="relevance">Sort by Relevance</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="products-grid">
+                        <!-- Products will be loaded here dynamically -->
+                    </div>
+
+                    <div class="pagination">
+                        <button class="pagination-btn" id="prev-page">Previous</button>
+                        <div class="page-numbers">
+                            <span class="page-number active">1</span>
+                            <span class="page-number">2</span>
+                            <span class="page-number">3</span>
+                            <span class="page-dots">...</span>
+                            <span class="page-number">10</span>
+                        </div>
+                        <button class="pagination-btn" id="next-page">Next</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close" id="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₹0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkout-btn">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Toggle Button -->
+    <div class="cart-toggle" id="cart-toggle">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-product-name">Product Name</h3>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="product-details">
+                    <div class="product-image">
+                        <img id="modal-product-image" src="" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-price">
+                            <span class="price" id="modal-product-price">₹0.00</span>
+                            <span class="original-price" id="modal-original-price">₹0.00</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars" id="modal-product-rating">★★★★☆</span>
+                            <span class="rating-text" id="modal-rating-text">4.2 (150 reviews)</span>
+                        </div>
+                        <div class="product-description" id="modal-product-description">
+                            Product description will appear here.
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="qty-decrease">-</button>
+                                <input type="number" id="qty-input" value="1" min="1">
+                                <button class="qty-btn" id="qty-increase">+</button>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn" id="modal-add-to-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content checkout-modal">
+            <div class="modal-header">
+                <h3>Checkout</h3>
+                <button class="modal-close" id="checkout-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="checkout-steps">
+                    <!-- Step 1: Delivery Address -->
+                    <div class="checkout-step active" id="step-1">
+                        <h4>Delivery Address</h4>
+                        <div class="address-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="Full Name" id="delivery-name">
+                                <input type="tel" placeholder="Phone Number" id="delivery-phone">
+                            </div>
+                            <input type="text" placeholder="Street Address" id="delivery-address">
+                            <div class="form-row">
+                                <input type="text" placeholder="City" id="delivery-city">
+                                <input type="text" placeholder="State" id="delivery-state">
+                            </div>
+                            <div class="form-row">
+                                <input type="text" placeholder="PIN Code" id="delivery-pincode">
+                                <input type="text" placeholder="Landmark (Optional)" id="delivery-landmark">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary next-step" data-step="2">Continue to Payment</button>
+                    </div>
+
+                    <!-- Step 2: Payment Method -->
+                    <div class="checkout-step" id="step-2">
+                        <h4>Payment Method</h4>
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="upi" checked>
+                                <div class="payment-info">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>UPI Payment</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="card">
+                                <div class="payment-info">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Credit/Debit Card</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="netbanking">
+                                <div class="payment-info">
+                                    <i class="fas fa-university"></i>
+                                    <span>Net Banking</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cod">
+                                <div class="payment-info">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span>Cash on Delivery</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="checkout-actions">
+                            <button class="btn btn-outline prev-step" data-step="1">Back</button>
+                            <button class="btn btn-primary" id="place-order-btn">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StreetConnect</h3>
+                    <p>Empowering street food vendors with digital solutions for better business growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="forum.html">Community</a></li>
+                        <li><a href="analytics.html">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StreetConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/marketplace.js"></script>
+    <script src="../scripts/payment.js"></script>
+</body>
+</html> 

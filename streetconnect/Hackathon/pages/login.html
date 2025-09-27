@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetConnect - Login</title>
+  <link rel="stylesheet" href="../styles/auth.css">
+   <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff7f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 320px;
+    }
+    .form-container h2 {
+      color: #ff7f50;
+    }
+    .form-container input {
+      display: block;
+      width: 90%;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #333;
+    }
+    .form-container button {
+      width: 95%;
+      padding: 10px;
+      background: #ff7f50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background: #e5673a;
+    }
+    .form-container p {
+      margin-top: 10px;
+    }
+    .form-container a {
+      color: #ff7f50;
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+<body>
+   <!-- Navigation -->
+    <nav class="navbar" style="margin-left: -1.5rem;">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <span>StreetConnect</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="marketplace.html" class="nav-link">Marketplace</a>
+                <a href="inventory.html" class="nav-link">Inventory</a>
+                <a href="forum.html" class="nav-link">Community</a>
+                <a href="analytics.html" class="nav-link " >Analytics</a>
+                <a href="login.html" class="nav-link active ">Login</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+      </nav>
+  <div class="form-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register</a></p>
+  </div>
+
+  <!-- ✅ Firebase Script -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } 
+            from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCNJfUIj7PSRtry1VNEJCngtnYe927cPI4",
+      authDomain: "streetconnect-e0522.firebaseapp.com",
+      projectId: "streetconnect-e0522",
+      storageBucket: "streetconnect-e0522.firebasestorage.app",
+      messagingSenderId: "555804695389",
+      appId: "1:555804695389:web:245a4bce9a6d9fe28766b4",
+      measurementId: "G-KVGCP4S5TZ"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // ✅ Prevent page reload
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          alert("✅ Logged in Successfully!");
+          window.location.href = location.origin + "/index.html"; // redirect after login
+        })
+        .catch(err => alert("❌ " + err.message));
+    });
+  </script>
+</body>
+</html>

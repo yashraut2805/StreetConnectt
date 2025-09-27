@@ -1,0 +1,61 @@
+{
+  "name": "streetconnect",
+  "version": "1.0.0",
+  "description": "A comprehensive web application empowering Indian street food vendors with digital solutions for better business growth",
+  "main": "index.html",
+  "scripts": {
+    "start": "php -S localhost:8000",
+    "dev": "live-server --port=8000 --open=/index.html",
+    "build": "echo 'Build process would go here'",
+    "test": "echo 'Tests would run here'",
+    "lint": "echo 'Linting would run here'",
+    "format": "prettier --write \"**/*.{js,css,html,json}\"",
+    "serve": "http-server -p 8000 -o"
+  },
+  "keywords": [
+    "street-food",
+    "vendors",
+    "marketplace",
+    "inventory",
+    "analytics",
+    "community",
+    "india",
+    "food-business",
+    "digital-transformation",
+    "b2b",
+    "ecommerce",
+    "supply-chain"
+  ],
+  "author": "StreetConnect Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/streetconnect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/streetconnect/issues"
+  },
+  "homepage": "https://streetconnect.com",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "chart.js": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "config": {
+    "port": 8000,
+    "host": "localhost"
+  }
+} 

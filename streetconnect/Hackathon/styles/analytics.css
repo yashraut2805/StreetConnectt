@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5ec;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  color: #FF7F50;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+canvas {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  margin-left: -2rem;
+}
+.back-btn {
+  background: #FF7F50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.back-btn:hover {
+  background: #e5673a;
+}
+
+/* Ensure it is always aligned left */
+.back-btn-container {
+  text-align: left;
+}
+.analytics-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 120px 0 60px;
+    text-align: center;
+    margin-left: -2rem;
+}
+
+.analytics-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}

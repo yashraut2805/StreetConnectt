@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5ec;
+  padding: 20px;
+}
+
+h1 {
+  color: #FF7F50;
+}
+
+.back-btn {
+  background: #FF7F50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #e5673a;
+}
+
+p, ul {
+  max-width: 600px;
+  line-height: 1.5;
+}
