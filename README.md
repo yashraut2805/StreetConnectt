@@ -2,8 +2,6 @@
 
 ### Connecting Street Food Vendors with Trusted Raw Material Suppliers
 
-![StreetConnect Logo](https://img.shields.io/badge/Version-1.0-blue) ![Status](https://img.shields.io/badge/Status-Prototype-brightgreen) ![Built%20with-React](https://img.shields.io/badge/Built%20with-React-blue) ![Hosted%20on-Netlify](https://img.shields.io/badge/Hosted%20on-Netlify-lightgrey)
-
 ---
 
 ## 🚨 Problem Statement
