@@ -20,5 +20,6 @@ StreetFood Connect helps small vendors:
 👉 https://streetconnectt.netlify.app/ 
 
 ## 📸 Screenshots
-Home Page - [Uploading image.png…]()
+Home Page - <img width="1920" height="1080" alt="Screenshot 2025-09-27 170157" src="https://github.com/user-attachments/assets/81c95c36-9693-47e8-8f12-8412238f42fb" />
+
 Market Place - <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2d5ee9c4-f671-4c38-bd88-c0b885549950" />
