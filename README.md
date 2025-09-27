@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76e2b763-872f-49e1-be91-c51f180ee8d1" /># StreetFood Connect 🍲
+# StreetFood Connect 🍲
 
 ## 🚀 Project Description
 StreetFood Connect is a web platform designed to help street food vendors get *affordable raw materials* directly from trusted suppliers.  
