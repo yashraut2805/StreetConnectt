@@ -1,2 +1,24 @@
-# StreetConnectt
-Street food vendors struggle to source quality raw materials at fair prices. With no trusted suppliers or structured marketplace, they rely on costly middlemen. This results in higher expenses, lower profits, and inconsistent food quality that hurts both vendors and customers.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76e2b763-872f-49e1-be91-c51f180ee8d1" /># StreetFood Connect 🍲
+
+## 🚀 Project Description
+StreetFood Connect is a web platform designed to help street food vendors get *affordable raw materials* directly from trusted suppliers.  
+It builds *trust + structure + affordability* by connecting vendors, suppliers, and customers.
+
+## ✨ Features
+- 📦 Supplier-Vendor Marketplace: Vendors can browse affordable raw materials.  
+- 🤝 Trust Score System: Ratings & reviews build reliability.  
+- 📍 Localized Listings: Nearby suppliers shown first.  
+- 📊 Analytics Dashboard: Vendors can track purchases & costs.  
+
+## 🌍 Impact
+StreetFood Connect helps small vendors:  
+- Save money on raw materials.  
+- Build stronger businesses.  
+- Reduce waste with bulk sharing.  
+
+## 🔗 Deployed Application
+👉 https://streetconnectt.netlify.app/ 
+
+## 📸 Screenshots
+Home Page - [Uploading image.png…]()
+Market Place - <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2d5ee9c4-f671-4c38-bd88-c0b885549950" />
